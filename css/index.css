@@ -1,59 +1,57 @@
-@import "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css";
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: #383F34;
-    background-size: cover;
+    background: #34495E;
 }
-.login-box {
-    width: 280px;
+.box {
+    width: 300px;
+    padding: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-}
-.login-box h1 {
-    float: left;
-    font-size: 40px;
-    border-bottom: 6px solid #4CAF50;
-    margin-bottom: 50px;
-    padding: 13px 0;
-}
-.login-box .textbox {
-    width: 100%;
-    overflow: hidden;
-    font-size: 20px;
-    padding: 8px 0;
-    margin: 8px 0;
-    border-bottom: 1px solid #4CAF50;
-}
-.login-box .textbox i {
-    width: 26px;
-    float: left;
+    background: #191919;
     text-align: center;
 }
-.login-box .textbox input {
-    border: none;
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type = "text"], .box input[type = "password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498DB;
+    padding: 14px 10px;
+    width: 200px;
     outline: none;
-    background: none;
     color: white;
-    font-size: 18px;
-    width: 80%;
-    float: left;
-    margin: 0 10px;
+    border-radius: 24px;
+    transition: 0.25s;
 }
-.login-box .btn {
-    width: 100%;
+.box input[type = "text"]:focus, .box input[type = "password"]:focus {
+    width: 280px;
+    border-color: #2ECC71;
+}
+.box input[type = "submit"] {
+    border: 0;
     background: none;
-    border: 2px solid #4CAF50;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ECC71;
+    padding: 14px 40px;
+    outline: none;
     color: white;
-    padding: 5px;
-    font-size: 18px;
+    border-radius: 24px;
+    transition: 0.25s;
     cursor: pointer;
-    margin: 12px 0;
+    text-transform: uppercase;
 }
-.login-box .btn:hover {
-    border: 2px solid white;
+.box input[type = "submit"]:hover {
+    background: #00CED1;
 }
